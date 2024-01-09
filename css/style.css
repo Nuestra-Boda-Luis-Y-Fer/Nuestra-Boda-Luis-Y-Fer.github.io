@@ -8,7 +8,7 @@
 /* BODY Y FUENTES */
 body {
   color: white;
-  background-color: rgb(49, 49, 49);
+  background-color: gray;
   text-align: center;
   overflow-x: hidden;
   margin: 0;
@@ -17,7 +17,7 @@ body {
 h1,
 h2 {
   font-family: "Great Vibes", sans-serif;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 h3 {
@@ -27,7 +27,7 @@ h3 {
 }
 h4 {
   font-family: "Dancing Script", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 /* BLOQUES */
@@ -57,7 +57,7 @@ h4 {
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 24px; /* Tamaño de fuente ajustado para dispositivos móviles */
+  font-size: 20px; /* Tamaño de fuente ajustado para dispositivos móviles */
   color: white;
   display: none; /* Oculta el botón inicialmente */
 }
