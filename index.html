@@ -25,13 +25,13 @@
 <body>
     <!-- AUDIO DE FONDO -->
     <audio id="reproductor" loop>
-        <source src="msc/Masquerade.mp3" type="audio/mpeg" />
+        <source src="msc/FTFT.mp3" type="audio/mpeg" />
     </audio>
     <script src="js/musica.js"></script>
     <!-- HEADER -->
     <header>
         <!-- SECCION 1 - TITULO -->
-        <div class="container-fluid" style="background-color: gray;">
+        <div class="container">
             <div class="bloque">
                 <h1>Luis Enrique y María Fernanda</h1>
                 <h4>"El amor no es mirarse a los ojos, sino mirar juntos en la misma dirección"</h4>
@@ -43,45 +43,62 @@
     <!-- MAIN CONTENT -->
     <main>
         <!-- SECCION 2 - IMAGENES -->
-        <div class="container-fluid" style="background-color: gray;">
+        <div class="container">
             <div class="bloque">
                 <h1>Luis y Fer</h1>
                 <h2>¡Se casan!</h2>
                 <div class="row">
                     <div class="col">
                         <!-- IMAGENES 1 y 2 -->
-                        <img src="img/img1.jpeg" alt="imagen1" width="100" height="100" />
-                        <img src="img/img2.jpeg" alt="imagen2" width="100" height="100" />
+                        <img class="corazon-img" src="img/img1.jpeg" alt="imagen1" width="100" height="100" />
+                        <!-- <img src="img/img2.jpeg" alt="imagen2" width="100" height="100" /> -->
                     </div>
-                    <div class="col">
-                        <!-- IMAGENES 3 y 4 -->
-                        <img src="img/img3.png" alt="imagen3" width="100" height="100" />
-                        <img src="img/img4.webp" alt="imagen4" width="100" height="100" />
-                    </div>
+                    <!-- <div class="col"> -->
+                    <!-- IMAGENES 3 y 4 -->
+                    <!-- <img src="img/img3.png" alt="imagen3" width="100" height="100" /> -->
+                    <!-- <img src="img/img4.webp" alt="imagen4" width="100" height="100" /> -->
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
         <!-- SECCION 3 - FECHA DE LA BODA -->
-        <div class="container-fluid" style="background-color: gray;">
+        <div class="container">
             <div class="bloque">
                 <h1>Nuestra Boda</h1>
                 <h2>24-Febrero-2024</h2>
-                <i class="icon"><img width="64" height="64" src="https://img.icons8.com/external-outline-02-chattapat-/64/external-wedding-wedding-outline-02-chattapat--3.png" alt="external-wedding-wedding-outline-02-chattapat--3" /></i>
+                <!-- Separador personalizado -->
+                <div class="separator">
+                    <div class="separator-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div class="separator-icon"><img src="https://img.icons8.com/external-outline-02-chattapat-/64/external-wedding-wedding-outline-02-chattapat--3.png" alt="ícono de boda"></div>
+                    <div class="separator-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
                 <h4>¡A ponerse guapos que nos vamos a casar!
-                    Tenemos todo… el traje, el coche, el fotógrafo, el restaurante, las flores… Pero nos falta lo más importante: ¡Contar contigo en este día tan especial!</h4>
+                    Tenemos todo… el traje, el coche, el fotógrafo, el restaurante, las flores… <p></p>Pero nos falta lo más importante: ¡Contar contigo en este día tan especial!</h4>
             </div>
         </div>
         <!-- SECCION 4 - CONTADOR -->
-        <div class="container-fluid" style="background-color: gray;">
+        <div class="container">
             <div class="bloque">
-                <h1>Falta para vernos</h1>
+                <h1 style="font-size: 50px; ">Falta para vernos</h1>
                 <h2>
-                    <div id="contador"></div>
+                    <div id="contador" style="font-size: 40px;"></div>
                 </h2>
             </div>
         </div>
         <!-- SECCION 4 - AGRADECIMIENTOS -->
-        <div class="container-fluid" style="background-color: gray;">
+        <div class="container">
             <div class="bloque">
                 <h1>En agradecimiento a nuestros padres</h1>
                 <h4>María Patricia Velázquez Corona <p>
@@ -98,7 +115,7 @@
             </div>
         </div>
         <!-- SECCION 5 - CEREMONIA Y RECEPCION -->
-        <div class="container-fluid" style="background-color: gray;">
+        <div class="container">
             <div class="bloque" style="flex-direction: column;">
                 <h1>Acompáñanos</h1>
                 <br>
@@ -110,12 +127,12 @@
                 </h3>
                 <!-- MAPAS -->
                 <div class="mapas">
-                    <iframe class="mt-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4478.5162541054715!2d-98.4371341927716!3d19.283746280370426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd4796a2b3aa1%3A0x3df34f33962e77d7!2sSan%20Martin%20Obispo%20Parish!5e0!3m2!1sen!2smx!4v1704769554523!5m2!1sen!2smx" width="200" height="200" style="border-radius: 25px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1704770507892!6m8!1m7!1snxjeU2u9q2QpLgSEO6VTcQ!2m2!1d19.28283062249411!2d-98.4351117818912!3f73.18072!4f0!5f0.7820865974627469" width="200" height="200" style="border-radius: 25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="mt-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4478.5162541054715!2d-98.4371341927716!3d19.283746280370426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd4796a2b3aa1%3A0x3df34f33962e77d7!2sSan%20Martin%20Obispo%20Parish!5e0!3m2!1sen!2smx!4v1704769554523!5m2!1sen!2smx" width="250" height="250" style="border-radius: 25px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!4v1704770507892!6m8!1m7!1snxjeU2u9q2QpLgSEO6VTcQ!2m2!1d19.28283062249411!2d-98.4351117818912!3f73.18072!4f0!5f0.7820865974627469" width="200" height="200" style="border-radius: 25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                 </div>
             </div>
         </div>
-        <div class="container-fluid" style="background-color: gray;">
+        <div class="container">
             <div class="bloque" style="flex-direction: column;">
                 <h2>Recepción</h2>
                 <h3>
@@ -125,13 +142,13 @@
                 </h3>
                 <!-- MAPAS -->
                 <div class="mapas">
-                    <iframe class="mt-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1882.9520632358576!2d-98.43889613757327!3d19.286535041430486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd5e27aad52c1%3A0xe8e0de672f358add!2sComite%20ejecutivo%20local%202022-2024!5e0!3m2!1sen!2smx!4v1704770313245!5m2!1sen!2smx" width="200" height="200" style="border-radius: 25px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2smx!4v1704771047207!5m2!1sen!2smx!6m8!1m7!1skY_jEmjWPbsnCnr5kJqYFw!2m2!1d19.28634711239266!2d-98.43801902339037!3f160.38525921257815!4f2.398186247057737!5f0.7820865974627469" width="200" height="200" style="border-radius: 25px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="mt-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1882.9520632358576!2d-98.43889613757327!3d19.286535041430486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd5e27aad52c1%3A0xe8e0de672f358add!2sComite%20ejecutivo%20local%202022-2024!5e0!3m2!1sen!2smx!4v1704770313245!5m2!1sen!2smx" width="250" height="250" style="border-radius: 25px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2smx!4v1704771047207!5m2!1sen!2smx!6m8!1m7!1skY_jEmjWPbsnCnr5kJqYFw!2m2!1d19.28634711239266!2d-98.43801902339037!3f160.38525921257815!4f2.398186247057737!5f0.7820865974627469" width="200" height="200" style="border-radius: 25px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                 </div>
             </div>
         </div>
         <!-- SECCION 6 - CONFIRMACION -->
-        <div class="container-fluid" style="background-color: gray;">
+        <div class="container">
             <div class="bloque">
                 <h1>Confirma tu asistencia </h1>
                 <h3>
@@ -151,7 +168,7 @@
     <!-- FOOTER -->
     <footer>
         <!-- SECCION 7 - PIE DE PAGINA -->
-        <div class="container-fluid" style="background-color: gray;">
+        <div class="container">
             <div class="bloque">
                 <h1>¡Te esperamos!</h1>
             </div>

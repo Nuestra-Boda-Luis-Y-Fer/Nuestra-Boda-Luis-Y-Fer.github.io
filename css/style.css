@@ -7,10 +7,15 @@
 
 /* BODY Y FUENTES */
 body {
-  color: white;
-  background-color: gray;
+  /* background-color: gray; */
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   text-align: center;
   overflow-x: hidden;
+  overflow-y: hidden;
   margin: 0;
   padding: 0;
 }
@@ -43,12 +48,12 @@ h4 {
 .botones {
   flex-direction: row;
 }
-
+/* MAPAS */
 .mapas {
   flex-direction: row;
 }
 
-/* Estilos para los botones de scroll */
+/* BOTONES DE SCROLL */
 .scroll-btn {
   position: fixed;
   bottom: 20px;
@@ -64,10 +69,47 @@ h4 {
 
 #scroll-prev {
   left: 20px;
-  background-color: #2196f3;
+  font-size: 30px;
+  background-color: #ffffff;
+  border: 1px solid #c19b69; /* Color del borde */
+  color: #c19b69; /* Color del texto */
 }
 
 #scroll-next {
   right: 20px;
-  background-color: #4caf50;
+  font-size: 30px;
+  background-color: #ffffff;
+  border: 1px solid #c19b69;
+  color: #c19b69; /* Color del texto */
+}
+
+#scroll-prev:hover {
+  background-color: #ffecea;
+}
+
+#scroll-next:hover {
+  background-color: #ffecea;
+}
+/* LINEAS CON EL ICONO */
+.separator {
+  display: flex;
+  align-items: center;
+}
+
+.separator-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: black;
+}
+
+.separator-icon {
+  margin: 0 10px; /* Ajusta el espacio entre la línea y el ícono según tus preferencias */
+}
+
+/* IMAGENES EN FORMA DE CORAZON */
+.corazon-img {
+  width: 200px; /* Ajusta el tamaño según tus necesidades */
+  height: 200px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red"><path d="M12 21.35l-1.45-1.32C5.4 14.25 2 11.15 2 7.5 2 4.42 4.42 2 7.5 2 9.36 2 11.11 3.36 12 4.73 12.89 3.36 14.64 2 16.5 2 19.58 2 22 4.42 22 7.5c0 3.65-3.4 6.75-8.55 12.54L12 21.35z"/></svg>');
+  background-size: cover;
 }
