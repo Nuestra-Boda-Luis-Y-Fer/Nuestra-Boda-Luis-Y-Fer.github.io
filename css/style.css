@@ -15,7 +15,6 @@ body {
   background-position: center;
   text-align: center;
   overflow-x: hidden;
-  overflow-y: hidden;
   margin: 0;
   padding: 0;
 }
@@ -112,4 +111,22 @@ h4 {
   height: 200px;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red"><path d="M12 21.35l-1.45-1.32C5.4 14.25 2 11.15 2 7.5 2 4.42 4.42 2 7.5 2 9.36 2 11.11 3.36 12 4.73 12.89 3.36 14.64 2 16.5 2 19.58 2 22 4.42 22 7.5c0 3.65-3.4 6.75-8.55 12.54L12 21.35z"/></svg>');
   background-size: cover;
+}
+
+#botonnovio,
+#botonnovia {
+  left: 20px;
+  font-size: 18px;
+  background-color: #c19b69;
+  border: 1px solid #866b46; /* Color del borde */
+  color: #ffffff; /* Color del texto */
+}
+
+#botonnovio:hover,
+#botonnovia:hover {
+  left: 20px;
+  font-size: 20px;
+  background-color: #866b46;
+  border: 1px solid #866b46; /* Color del borde */
+  color: #ffffff; /* Color del texto */
 }

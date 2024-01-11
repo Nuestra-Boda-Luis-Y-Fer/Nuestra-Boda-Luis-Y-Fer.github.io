@@ -17,7 +17,7 @@ function enviarMensaje() {
 // SCRIPT PARA MANDAR WSP A LA NOVIA
 function enviarMensaje2() {
     // Número de teléfono al que se enviará el mensaje (agrega el código de país)
-    var numeroTelefono = '+522481629018';
+    var numeroTelefono = '+522481558062';
 
     // Mensaje que se enviará
     var mensaje = 'Hola, quiero confirmar mi asistencia';
