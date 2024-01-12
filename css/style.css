@@ -49,7 +49,7 @@ h4 {
 }
 /* MAPAS */
 .mapas {
-  flex-direction: row;
+  flex-direction: col;
 }
 
 /* BOTONES DE SCROLL */
@@ -105,6 +105,9 @@ h4 {
   margin: 0 10px; /* Ajusta el espacio entre la línea y el ícono según tus preferencias */
 }
 
+.church {
+  font-size: 100px;
+}
 /* IMAGENES EN FORMA DE CORAZON */
 .corazon-img {
   width: 200px; /* Ajusta el tamaño según tus necesidades */
