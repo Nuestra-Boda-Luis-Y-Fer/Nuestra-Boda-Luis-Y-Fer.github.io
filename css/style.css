@@ -49,7 +49,8 @@ h4 {
 }
 /* MAPAS */
 .mapas {
-  flex-direction: col;
+  flex-direction: column-reverse;
+  display: flex;
 }
 
 /* BOTONES DE SCROLL */
@@ -132,4 +133,9 @@ h4 {
   background-color: #866b46;
   border: 1px solid #866b46; /* Color del borde */
   color: #ffffff; /* Color del texto */
+}
+
+.padrinos {
+  font-family: "Great Vibes", sans-serif;
+  font-size: 45px;
 }
