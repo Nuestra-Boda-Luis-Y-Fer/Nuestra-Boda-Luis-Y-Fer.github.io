@@ -1,0 +1,15 @@
+.container.cover .bloque {
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.img-cover {
+    max-width: 45vw;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 767px) {
+    .img-cover {
+        max-width: 40vh;
+    }
+}
