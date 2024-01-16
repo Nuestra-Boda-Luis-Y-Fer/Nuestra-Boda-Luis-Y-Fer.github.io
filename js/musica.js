@@ -1,13 +1,13 @@
 var reproductor = document.getElementById('reproductor');
-var pauseIcon = document.getElementById('pause-icon');
+var pauseIcon = document.getElementById('scroll-pause');
 
 function togglePlayPause() {
     if (reproductor.paused) {
         reproductor.play();
-        pauseIcon.innerHTML = '<i style="font-size: 30px;" class="bx bx-pause-circle"></i>';
+        pauseIcon.innerHTML = '<i class="bx bx-pause-circle"></i>';
     } else {
         reproductor.pause();
-        pauseIcon.innerHTML = '<i style="font-size: 30px;" class="bx bx-play-circle"></i>';
+        pauseIcon.innerHTML = '<i class="bx bx-play-circle"></i>';
     }
 }
 

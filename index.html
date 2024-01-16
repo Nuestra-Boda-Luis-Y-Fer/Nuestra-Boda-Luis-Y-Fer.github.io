@@ -32,11 +32,17 @@
                 <h4>"El amor no es mirarse a los ojos, sino mirar juntos en la misma dirección"</h4>
             </div>
         </div>
-        <button id="scroll-prev" class="scroll-btn" onclick="scrollToBlock(-1)"><i class='bx bx-chevrons-up'></i></i></button>
-        <button id="scroll-next" class="scroll-btn" onclick="scrollToBlock(1)"><i class='bx bx-chevrons-down'></i></i></button>
+        <button id="scroll-prev" class="scroll-btn" onclick="scrollToBlock(-1)"><i class='bx bx-chevrons-up'></i></button>
+        <button id="scroll-next" class="scroll-btn" onclick="scrollToBlock(1)"><i class='bx bx-chevrons-down'></i></button>
+        <button id="scroll-pause" class="scroll-btn" onclick="togglePlayPause()"><i class='bx bx-pause-circle'></i></button>
     </header>
     <!-- MAIN CONTENT -->
     <main>
+        <!-- AUDIO DE FONDO -->
+        <audio id="reproductor" loop>
+            <source src="msc/FTFT.mp3" type="audio/mpeg" />
+        </audio>
+        <script src="js/musica.js"></script>
         <!-- SECCION 2 - IMAGENES -->
         <div class="container">
             <div class="bloque">
@@ -92,7 +98,7 @@
                 </h2>
             </div>
         </div>
-        <!-- SECCION 4 - AGRADECIMIENTOS -->
+        <!-- SECCION 5 - AGRADECIMIENTOS -->
         <div class="container">
             <div class="bloque">
                 <h1>Con el amor y el apoyo de nuestros padres<p>
@@ -111,70 +117,70 @@
                 </h4>
             </div>
         </div>
-        <!-- SECCION 4.5 - AGRADECIMIENTOS -->
+        <!-- SECCION 5.5 - AGRADECIMIENTOS -->
         <div class="container">
             <div class="bloque">
-                <h1>Padrinos de boda</h1>
+                <h1 class="mt-4">Padrinos de boda</h1>
                 <h3 class="padrinos ">Sin ellos no sería igual</h3>
-                <h1 class="mt-3" style="font-size: 35px;">Padrinos de velación</h1>
+                <h1 class="mt-1" style="font-size: 35px;">Padrinos de velación</h1>
                 <h4 style="font-size: 18px;">Esteban Aguilar Martínez<p>
                         Beatriz Herrera Zempoalteca
                     </p>
                 </h4>
-                <h1 class="mt-3" style="font-size: 35px;">Padrinos de anillos</h1>
+                <h1 class="mt-1" style="font-size: 35px;">Padrinos de anillos</h1>
                 <h4 style="font-size: 18px;">Roberto Orozco Montaño <p>
                         Rosalinda Jiménez Aranda
                     </p>
                 </h4>
-                <h1 class="mt-3" style="font-size: 35px;">Padrinos de lazo</h1>
+                <h1 class="mt-1" style="font-size: 35px;">Padrinos de lazo</h1>
                 <h4 style="font-size: 18px;">Jose Luis Vázquez Hernández<p>
                         María Patricia Velázquez Corona
                     </p>
                 </h4>
-                <h1 class="mt-3" style="font-size: 35px;">Padrinos de arras</h1>
+                <h1 class="mt-1" style="font-size: 35px;">Padrinos de arras</h1>
                 <h4 style="font-size: 18px;">Alejandro González Díaz <p>
                         Lourdes Herrera Zempoalteca </p>
                     </p>
                 </h4>
             </div>
         </div>
-        <!-- SECCION 5 - CEREMONIA Y RECEPCION -->
+        <!-- SECCION 6 - CEREMONIA Y RECEPCION -->
         <div class="container">
             <div class="bloque" style="flex-direction: column;">
-                <img width="150" height="150" src="https://img.icons8.com/bubbles/150/church.png" alt="church" />
+                <img width="120" height="120" src="https://img.icons8.com/doodle/120/wedding-rings--v1.png" alt="wedding-rings--v1" />
                 <h2> Ceremonia Religiosa </h2>
                 <!-- FALTAN ICONOS DE ANILLOS -->
-                <h3 class="mt-3">
-                    Acompáñanos a recibir la bendición de Dios <p>
-                        La ceremonia se llevará a cabo el día 24 de Febrero de 2024
-                        a las 16:00 Hrs. en la Parroquia de San Martín Obispo de Tours
-                        de San Martín Texmelucan, Pue.
+                <h3 class="mt-4">
+                    <p style="margin-bottom: 0;">Acompáñanos a recibir la bendición de Dios</p>
+                    La ceremonia se llevará a cabo el día 24 de Febrero de 2024
+                    a las 16:00 Hrs. en la Parroquia de San Martín Obispo de Tours
+                    de San Martín Texmelucan, Pue.
                 </h3>
                 <!-- MAPAS -->
                 <div class="mapas">
-                    <a class="btn btn-danger mt-3" href="https://maps.app.goo.gl/ZWimtRnMcq6ehHT66" target="_blank"><i class='bx bxs-map'></i> Abrir mapa</a>
-                    <iframe class="mt-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4478.5162541054715!2d-98.4371341927716!3d19.283746280370426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd4796a2b3aa1%3A0x3df34f33962e77d7!2sSan%20Martin%20Obispo%20Parish!5e0!3m2!1sen!2smx!4v1704769554523!5m2!1sen!2smx" width="250" height="250" style="border-radius: 25px; border: 5px solid #c19b69;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a class="btn btn-danger mt-2" href="https://maps.app.goo.gl/ZWimtRnMcq6ehHT66" target="_blank"><i class='bx bxs-map'></i> Abrir mapa</a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4478.5162541054715!2d-98.4371341927716!3d19.283746280370426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd4796a2b3aa1%3A0x3df34f33962e77d7!2sSan%20Martin%20Obispo%20Parish!5e0!3m2!1sen!2smx!4v1704769554523!5m2!1sen!2smx" width="250" height="250" style="border-radius: 25px; border: 5px solid #c19b69;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <!-- <iframe src="https://www.google.com/maps/embed?pb=!4v1704770507892!6m8!1m7!1snxjeU2u9q2QpLgSEO6VTcQ!2m2!1d19.28283062249411!2d-98.4351117818912!3f73.18072!4f0!5f0.7820865974627469" width="200" height="200" style="border-radius: 25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="bloque" style="flex-direction: column;">
-                <h2>Recepción</h2>
-                <h3>
+                <img width="120" height="120" src="/img/copas.png" />
+                <h3 class="mt-4">
                     Los esperamos con mucho gusto después de la ceremonia en
                     el salón Aztlan (Sindicato Pemex Sección 46) San Martín Temxelucan, Pue.
                     A partir de las 17:30 Hrs.
                 </h3>
                 <!-- MAPAS -->
                 <div class="mapas">
-                    <a class="btn btn-danger mt-3" href="https://maps.app.goo.gl/KX85mghY7yFwf1EMA" target="_blank"><i class='bx bxs-map'></i> Abrir mapa</a>
-                    <iframe class="mt-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1882.9520632358576!2d-98.43889613757327!3d19.286535041430486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd5e27aad52c1%3A0xe8e0de672f358add!2sComite%20ejecutivo%20local%202022-2024!5e0!3m2!1sen!2smx!4v1704770313245!5m2!1sen!2smx" width="250" height="250" style="border-radius: 25px; border: 5px solid #c19b69;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a class="btn btn-danger mt-2" href="https://maps.app.goo.gl/KX85mghY7yFwf1EMA" target="_blank"><i class='bx bxs-map'></i> Abrir mapa</a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1882.9520632358576!2d-98.43889613757327!3d19.286535041430486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd5e27aad52c1%3A0xe8e0de672f358add!2sComite%20ejecutivo%20local%202022-2024!5e0!3m2!1sen!2smx!4v1704770313245!5m2!1sen!2smx" width="250" height="250" style="border-radius: 25px; border: 5px solid #c19b69;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <!-- <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2smx!4v1704771047207!5m2!1sen!2smx!6m8!1m7!1skY_jEmjWPbsnCnr5kJqYFw!2m2!1d19.28634711239266!2d-98.43801902339037!3f160.38525921257815!4f2.398186247057737!5f0.7820865974627469" width="200" height="200" style="border-radius: 25px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                 </div>
             </div>
         </div>
-        <!-- SECCION 6.5 - RECUERDO -->
+        <!-- SECCION 7 - RECUERDO -->
         <div class="container">
             <div class="bloque" style="flex-direction: column;">
                 <h3>Nuestros recuerdos </h3>
@@ -185,29 +191,25 @@
                 </h3>
                 <h3 class="mt-5" style="font-size: 40px;"><strong>#Fer+Luis</strong></h3>
                 <div class="separator mt-5">
-                    <div class="separator-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="separator-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </div>
                     <div class="separator-icon">
                         <a href="fb://composer" target="_blank">
-                            <img src="/img/fb-btn.svg" alt="Facebook Icon" class="facebook-icon" width="30px" height="30px">
+                            <img src="/img/fb-btn.svg" alt="Facebook Icon" class="facebook-icon" width="40px" height="40px">
                         </a>
                     </div>
-                    <div class="separator-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="separator-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </div>
                     <div class="separator-icon">
                         <a href="https://www.instagram.com/" target="_blank">
-                            <img src="/img/instagram-btn.svg" alt="Instagram Icon" class="instagram-icon" width="30px" height="30px">
+                            <img src="/img/instagram-btn.svg" alt="Instagram Icon" class="instagram-icon" width="40px" height="40px">
                         </a>
                     </div>
-                    <div class="separator-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                    <div class="separator-icon" id="pause-icon" onclick="togglePlayPause()">
-                        <i style="font-size: 30px;" class='bx bx-pause-circle'></i>
-                    </div>
-                    <div class="separator-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="separator-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </div>
                 </div>
             </div>
-            <!-- SECCION 6 - CONFIRMACION -->
+            <!-- SECCION 8 - CONFIRMACION -->
             <div class="container">
                 <div class="bloque" style="flex-direction: column;">
                     <h1>Confirma tu asistencia </h1>
@@ -223,16 +225,11 @@
                     </div>
                 </div>
             </div>
-
-            <!-- AUDIO DE FONDO -->
-            <audio id="reproductor" loop>
-                <source src="msc/FTFT.mp3" type="audio/mpeg" />
-            </audio>
-            <script src="js/musica.js"></script>
+        </div>
     </main>
     <!-- FOOTER -->
     <footer>
-        <!-- SECCION 7 - PIE DE PAGINA -->
+        <!-- SECCION 9 - PIE DE PAGINA -->
         <div class="container">
             <div class="bloque">
                 <h1>¡Te esperamos!</h1>
